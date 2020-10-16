@@ -1,0 +1,16 @@
+div,h1 {
+  color:black;
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+}
+a,p {
+  color:black;
+  font-family: Roboto;
+  font-style: normal;
+}
+button {
+  color:white;
+  font-family: Roboto;
+  font-style: normal;
+}
