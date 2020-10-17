@@ -1,16 +1,18 @@
-div,h1 {
+.logo,.main-content__title {
   color:black;
   font-family: PT Serif;
   font-style: normal;
   font-weight: bold;
 }
-a,p {
+.menu__item,.main-content__text {
   color:black;
   font-family: Roboto;
   font-style: normal;
 }
-button {
+.main-content__button {
   color:white;
+  background: #0056EC
   font-family: Roboto;
   font-style: normal;
+  background: #0056EC
 }
