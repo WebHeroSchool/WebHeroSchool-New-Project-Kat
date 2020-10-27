@@ -1,4 +1,53 @@
-.logo,.main-content__title {
+body {
+  margin: 0;
+}
+.wrapper {
+  margin: auto;
+  width: 80%;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  position: relative;
+  padding: 40px 0;
+  padding-left: 44px;
+  font: bold 24px/31px pt_serif, Arial, Helvetica, sans-serif;
+  border: dashed 1px red;
+  }
+.logo__circle {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 28px;
+  height: 28px;
+  border: dashed 1px red;
+}
+.logo__circle_color_dark-blue {
+   background: #0056EC;
+   border-radius: 50%;
+   opacity: .7;
+}
+.logo__circle_color_blue {
+  background: #C8DBFB;
+  border-radius: 50%;
+  opacity: .7;
+  left: 8px;
+  top: 56%;
+}
+.menu {
+    display: flex;
+    align-items: center;
+  }
+.menu__item {
+    padding: 0 13px;
+  }
+  .menu__item:last-child {
+    padding-right: 0;
+  }
+.main-content__title {
   color:black;
   font-family: PT Serif;
   font-style: normal;
