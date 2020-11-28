@@ -8,12 +8,12 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 206px;
+  margin-bottom: 220px;
 }
 .logo {
   position: relative;
-  padding: 40px 0;
-  padding-left: 44px;
+  padding: 21px 0;
+  padding-left: 46px;
   font: bold 24px/32px pt_serif, Arial, Helvetica, sans-serif;
   }
 .logo__circle {
@@ -39,12 +39,12 @@ body {
 .menu {
   display: flex;
   align-items: center;
-  padding: 1px 0;
+  padding: 30px 0;
 }
 .menu__item {
   display: block;
   position: relative;
-  margin-right: 26px;
+  margin-right: 27px;
   font: 500 18px/21px roboto, Arial, Helvetica, sans-serif;
   color: #000;
   text-decoration: none;
@@ -80,14 +80,14 @@ body {
     width: 100%;
   }
   .menu__item:last-child {
-    margin-right: 0;
+    margin-right: 7px;
   }
 .main {
-  padding: 0 63% 100px 0;
+  padding: 0 63% 1100px 0;
   background: top right no-repeat url('img/Frame.svg');
 }
 .main__title {
-  margin: 0 0 40px 0;
+  margin: 0 0 33px 0;
   font: bold 66px/87px pt_serif, Arial, Helvetica, sans-serif;
   color:#000;
 }
@@ -95,7 +95,7 @@ body {
   background: #ECF3FF;
 }
 .main__text {
-  margin: 0 0 41px 0;
+  margin: 0 0 43px 0;
   font: 22px/26px roboto, Arial, Helvetica, sans-serif;
   color:#000;
 }
@@ -104,7 +104,7 @@ body {
   color:#FFF;
   font: 18px/21px roboto, Arial, Helvetica, sans-serif;
   background: #0056EC;
-  padding: 14px 16px;
+  padding: 17px 29px;
   text-decoration: none;
   border-radius: 4px;
   transition: opacity .5s;
