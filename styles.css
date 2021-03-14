@@ -116,7 +116,7 @@ input#checkbox_id {
 .main__button:hover{
   opacity: .5;
 }
-@media(max-width:768px){
+@media(max-width:1300px){
 .body{
   margin: 0;
   }
@@ -224,7 +224,6 @@ input#checkbox_id {
    transform: rotate(-45deg);;
  }
  #checkbox_id {
-   //display: none;
   opacity: 0;
  }
  .header{
