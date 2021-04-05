@@ -235,6 +235,7 @@ input#checkbox_id {
   opacity: .5;
  }
 }
+
 @media(max-width:1024px){
   .body {
   margin: 0;
@@ -321,9 +322,9 @@ input#checkbox_id {
     margin-right: 10px;
   }
 .main {
-  padding: 29px 44% 184px 1%;
+  padding: 29px 48% 63px 1%;
   background: top right no-repeat url('img/Frame 1366.svg');
-  background-position: 92% 8%;
+  background-position: 92% 90%;
 }
 .main__title {
   margin: 0 0 38px 28px;
@@ -353,13 +354,11 @@ input#checkbox_id {
   opacity: .5;
  }
 }
+
 @media(max-width:768px){
-.body{
-  margin: 0;
-  }
 .wrapper {
   margin: auto;
-  width: 91%;
+  width: 90%;
 }
  .logo {
    display: flex;
@@ -370,7 +369,7 @@ input#checkbox_id {
  .logo__circle {
    position: absolute;
    left: 0;
-   top: 22%;
+   top: 29%;
    transform: translateY(-50%);
    width: 28px;
    height: 28px;
@@ -410,9 +409,9 @@ input#checkbox_id {
 }
  .burger__menu{
    position:relative;
-   width: 25px;
+   width: 24px;
    height: 16px;
-   top: 6px;
+   top: 9px;
    left: 0;
    cursor: pointer;
  }
@@ -470,7 +469,7 @@ input#checkbox_id {
   position: fixed;
  }
  .header{
-   margin-bottom: 0.5px;
+   margin-bottom: 5px;
   }
  .main {
    text-align: center;
@@ -478,15 +477,155 @@ input#checkbox_id {
    background-size: 78%;
    background-position: top center;
   }
- .main__title {
+.main__title {
  margin: 2px 0px 32px 52px;
  font: bold 30px/40px pt_serif, arial, helvetica, sans-serif;
   }
- .main__text {
+.main__text {
  margin: 0px 0px 23px 55px;
  font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
   }
- .main__button {
+.main__button {
+ margin: 3px 0 0px 40px;
+ padding: 13px 18px;
+ font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
+  }
+}
+
+@media(max-width:375px){
+  .body{
+    overflow: hidden;
+  }
+ .wrapper {
+  margin: auto;
+  width: 90%;
+}
+ .logo {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   color: rgba(0,0,0,0);
+ }
+ .logo__circle {
+   position: absolute;
+   left: 0;
+   top: 29%;
+   transform: translateY(-50%);
+   width: 28px;
+   height: 28px;
+ }
+ .logo__circle_color_dark-blue {
+    background: #0056EC;
+    border-radius: 50%;
+    opacity: .7;
+ }
+ .logo__circle_color_blue {
+   background: #C8DBFB;
+   border-radius: 50%;
+   opacity: .7;
+   left: 8px;
+   top: 37%;
+ }
+ .menu {
+  position: fixed;
+  width: 100vw;
+  left: 11px;
+  bottom: 6px;
+  background-color: white;
+  height: 100vh;
+  visibility: hidden;
+  justify-content: space-between;
+ }
+ .menu__item{
+   display: inline-block;
+   position: relative;
+   margin-bottom: 25px;
+   top: 35px;
+   font: 500 30px/35px roboto, Arial, Helvetica, sans-serif;
+   text-decoration: none;
+   transition: opacity.5s;
+ }
+ .menu__item:last-child {
+}
+ .burger__menu{
+   position:relative;
+   width: 24px;
+   height: 16px;
+   top: 9px;
+   left: 0;
+   cursor: pointer;
+ }
+ .burger__line{
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 3px;
+   background: #0056EC;
+   top: 7px;
+ }
+ .burger__menu::before,
+ .burger__menu::after{
+   content: "";
+   width: 100%;
+   height: 3px;
+   background: #0056EC;
+   position: absolute;
+   transition: .3s ease;
+   z-index:1;
+ }
+ .burger__menu::before{
+   top: 0;
+ }
+ .burger__menu::after{
+   bottom: 0;
+ }
+ #checkbox_id:checked ~ .menu {
+   display: flex;
+   visibility: visible;
+   position: fixed;
+   align-items: center;
+   justify-content:center;
+   flex-direction: column;
+ }
+ #checkbox_id:checked ~ .menu > .menu__item {
+   color: 000;
+ }
+ /*анимация бургера*/
+ #checkbox_id:checked ~ label > .burger__menu > .burger__line{
+   display:  none;
+ }
+ /*верхняя*/
+ #checkbox_id:checked ~ label > .burger__menu::before {
+   top: 7px;
+   transform: rotate(45deg);
+ }
+ /*нижняя*/
+ #checkbox_id:checked ~ label > .burger__menu::after {
+   top: 7px;
+   transform: rotate(-45deg);
+ }
+ #checkbox_id {
+  opacity: 0;
+  position: fixed;
+ }
+ .header{
+   margin-bottom: 5px;
+  }
+ .main {
+   text-align: center;
+   padding: 72% 13% 0px 0px;
+   background-size: 78%;
+   background-position: top center;
+  }
+.main__title {
+ margin: 2px 0px 32px 52px;
+ font: bold 30px/40px pt_serif, arial, helvetica, sans-serif;
+  }
+.main__text {
+ margin: 0px 0px 23px 55px;
+ font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
+  }
+.main__button {
  margin: 3px 0 0px 40px;
  padding: 13px 18px;
  font: 500 14px/16px Roboto, arial, helvetica, sans-serif;
