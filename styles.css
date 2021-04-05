@@ -96,7 +96,7 @@ input#checkbox_id {
   color:#000;
 }
 .main__title-text_highlight{
-  background: #ECF3FF;
+  background: linear-gradient(180deg, rgba(255,255,255,1)15%, #ECF3FF 15%);
 }
 .main__text {
   margin: 0 7% 43px 0%;
@@ -213,7 +213,7 @@ input#checkbox_id {
   color:#000;
 }
 .main__title-text_highlight{
-  background: #ECF3FF;
+  background: linear-gradient(180deg, rgba(255,255,255,1)15%, #ECF3FF 15%);
 }
 .main__text {
   margin: 6px 100px 43px 75px;
@@ -332,7 +332,7 @@ input#checkbox_id {
   color:#000;
 }
 .main__title-text_highlight{
-  background: #ECF3FF;
+  background: linear-gradient(180deg, rgba(255,255,255,1)15%, #ECF3FF 15%);
 }
 .main__text {
   margin: 0px 138px 41px 28px;
@@ -624,7 +624,7 @@ input#checkbox_id {
 .main__text {
  margin: 0px 0px 23px 55px;
  font: 500 16px/19px Roboto, arial, helvetica, sans-serif;
-  }
+}
 .main__button {
  margin: 3px 0 0px 40px;
  padding: 13px 18px;
